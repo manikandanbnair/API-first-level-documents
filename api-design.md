@@ -55,7 +55,7 @@
     - response-body : 
     ```json
     {
-        "message" : "Peter Parker's Manager has been changed from May to Tony"
+        "message" : "Peter Parker's details has been changed."
     }
     ```
 
