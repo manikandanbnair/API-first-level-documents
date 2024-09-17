@@ -2,7 +2,7 @@
 
 ## Entity design
 
-<img src = "database_diagram.png" alt ="employee-entity-design" style="width:300px">
+<img src = "database_diagram.png" alt ="employee-entity-design" style="width:600px">
 
 ## API Methods
 1. **POST /api/v1/employee**
