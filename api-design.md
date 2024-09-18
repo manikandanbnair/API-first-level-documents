@@ -204,10 +204,11 @@
              "message": "Successfully deleted category"
          }
    ```
-9.  PUT /api/v1/orders?product-id={productId}&quantity={quantity}
+9.  PUT /api/v1/orders?product-id={productId}&quantity={quantity}&user-id={userId}
     ### *To create an order to buy an item:*
-    - request-param:productId
-    - request-param:quantity
+    - request-param:product-id [required = true]
+    - request-param:quantity [required = true]
+    - request-param:user-id [required = true]
     - response-status:200
     - response-body:
     ```json
@@ -215,10 +216,11 @@
         "message": "Successfully ordered"
      }
     ```
-10. PUT /api/v1/stock?product-id={productId}&quantity={quantity}
+10. PUT /api/v1/stock?product-id={productId}&quantity={quantity}&user-id={userId}
     ### *To create an order to restock an item:*
     - request-param:product-id [required = true]
     - request-param:quantity [required = true]
+    - request-param:user-id [required = true]
     - response-status:200
     - response-body:
     ```json
