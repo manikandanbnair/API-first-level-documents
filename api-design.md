@@ -149,18 +149,13 @@
                 }
         }
    ```
-5. PUT /api/v1/product
+5. PUT /api/v1/product?product_id={product_id}&product_name={product_name}&category_id={category_id}&price={price}&quantity={quantity}
    ### *To update product details:*
-   - request-body :
-   ```json
-    {
-        "productId":123,
-        "productName":"New_Product_ Name",
-        "categoryId":789,
-        "price":600,
-        "quantity":100
-    }
-   ```
+   - request-param:product-id [required = true]
+   - request-param:product-name [required = false]
+   - request-param:category-id [required = false]
+   - request-param:price [required = false]
+   - request-param:quantity [required = false]
    - response-status:200
    - response-body:
    ```json
@@ -168,15 +163,10 @@
         "message":"Successfully updated product details"
     }
    ```
-6. PUT /api/v1/category
+6. PUT /api/v1/category?category_id={category-id}&name={name}
     ### *To update category name:*
-   - request-body :
-   ```json
-    {
-        "categoryId":123,
-        "Name":"New_Category_Name"
-    }
-   ```
+   - request-param:category-id [required = false]
+   - request-param:name [required = false]
    - response-status:200
    - response-body:
    ```json
