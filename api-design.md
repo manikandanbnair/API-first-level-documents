@@ -165,8 +165,8 @@
    ```
 6. PUT /api/v1/category?category_id={category-id}&name={name}
     ### *To update category name:*
-   - request-param:category-id [required = false]
-   - request-param:name [required = false]
+   - request-param:category-id [required = true]
+   - request-param:name [required = true]
    - response-status:200
    - response-body:
    ```json
