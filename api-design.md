@@ -61,7 +61,6 @@
    ### *To update details of employee:*
     - request-param : employee-id [required : true]
     - request-param : manager-id [required : false]
-    - request-param : account-name [required : false]
     - request-param : designation [required : false]
     - response-status : 200
     - response-body : 
